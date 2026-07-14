@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SentinelCore — Protecting Digital Infrastructure with Confidence</title>
+  <meta name="description" content="SentinelCore delivers enterprise-grade managed security services: penetration testing, cloud security, 24/7 SOC monitoring, incident response, and Zero Trust protection for regulated industries." />
+  <meta name="keywords" content="cybersecurity, managed security services, penetration testing, cloud security, SOC, incident response, zero trust, endpoint protection" />
+  <meta name="author" content="SentinelCore" />
+
+  <!-- Open Graph / social -->
+  <meta property="og:title" content="SentinelCore — Managed Security Services" />
+  <meta property="og:description" content="Protecting digital infrastructure with confidence. Enterprise cybersecurity, 24/7 monitoring, and rapid incident response." />
+  <meta property="og:type" content="website" />
+  <meta name="theme-color" content="#0A0F1C" />
+
+  <!-- Inter font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" />
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ============ SKIP LINK (a11y) ============ -->
+  <a href="#hero" class="skip-link">Skip to main content</a>
+
+  <!-- ============ 1. STICKY NAVIGATION ============ -->
+  <header class="navbar" id="navbar">
+    <div class="container nav-inner">
+      <a href="#hero" class="logo" aria-label="SentinelCore home">
+        <svg class="logo-mark" width="28" height="28" viewBox="0 0 32 32" fill="none" aria-hidden="true">
+          <path d="M16 2 4 7v8c0 7.5 5 12.5 12 15 7-2.5 12-7.5 12-15V7L16 2Z" fill="url(#lg)" stroke="#2563EB" stroke-width="1.2"/>
+          <path d="M11 16l3.5 3.5L21 12" stroke="#06B6D4" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+          <defs>
+            <linearGradient id="lg" x1="4" y1="2" x2="28" y2="30" gradientUnits="userSpaceOnUse">
+              <stop stop-color="#111827"/>
+              <stop offset="1" stop-color="#0A0F1C"/>
+            </linearGradient>
+          </defs>
+        </svg>
+        <span class="logo-text">Sentinel<span class="logo-accent">Core</span></span>
+      </a>
+
+      <nav class="nav-links" id="navLinks" aria-label="Primary">
+        <a href="#hero">Home</a>
+        <a href="#services">Services</a>
+        <a href="#solutions">Solutions</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+        <a href="#contact" class="btn btn-primary btn-nav">Get Started</a>
+      </nav>
+
+      <button class="hamburger" id="hamburger" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="navLinks">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ============ 2. HERO ============ -->
+    <section class="hero" id="hero">
+      <div class="container hero-grid">
+        <div class="hero-copy fade-in">
+          <span class="eyebrow">Managed Security Services</span>
+          <h1 class="hero-title">Protecting digital infrastructure with confidence.</h1>
+          <p class="hero-sub">
+            SentinelCore defends your cloud, endpoints, and networks around the clock —
+            combining a 24/7 security operations center, Zero Trust architecture, and rapid
+            incident response so your business stays resilient against modern threats.
+          </p>
+          <div class="hero-actions">
+            <a href="#contact" class="btn btn-primary">Get Started</a>
+            <a href="#services" class="btn btn-ghost">Explore Services</a>
+          </div>
+          <ul class="hero-trust" aria-label="Highlights">
+            <li><strong>99.9%</strong> threat detection</li>
+            <li><strong>24/7</strong> monitoring</li>
+            <li><strong>&lt;15 min</strong> response</li>
+          </ul>
+        </div>
+
+        <!-- Cybersecurity SVG illustration -->
+        <div class="hero-visual fade-in" aria-hidden="true">
+          <svg viewBox="0 0 460 420" fill="none" xmlns="http://www.w3.org/2000/svg" class="hero-svg">
+            <defs>
+              <linearGradient id="shieldGrad" x1="80" y1="40" x2="380" y2="380" gradientUnits="userSpaceOnUse">
+                <stop stop-color="#1E293B"/>
+                <stop offset="1" stop-color="#0A0F1C"/>
+              </linearGradient>
+              <linearGradient id="edge" x1="0" y1="0" x2="1" y2="1">
+                <stop stop-color="#2563EB"/>
+                <stop offset="1" stop-color="#06B6D4"/>
+              </linearGradient>
+              <radialGradient id="glow" cx="50%" cy="42%" r="55%">
+                <stop stop-color="#2563EB" stop-opacity="0.28"/>
+                <stop offset="1" stop-color="#2563EB" stop-opacity="0"/>
+              </radialGradient>
+            </defs>
+
+            <circle cx="230" cy="200" r="200" fill="url(#glow)"/>
+
+            <!-- orbit rings -->
+            <circle cx="230" cy="200" r="176" stroke="#1E293B" stroke-width="1.5" fill="none"/>
+            <circle cx="230" cy="200" r="140" stroke="#1E293B" stroke-width="1.5" fill="none" stroke-dasharray="4 8"/>
+
+            <!-- orbiting nodes -->
+            <g class="orbit">
+              <circle cx="230" cy="24" r="5" fill="#06B6D4"/>
+              <circle cx="406" cy="200" r="4" fill="#2563EB"/>
+              <circle cx="230" cy="376" r="4" fill="#2563EB"/>
+              <circle cx="54" cy="200" r="5" fill="#06B6D4"/>
+            </g>
+
+            <!-- shield -->
+            <path d="M230 62 130 104v88c0 78 52 128 100 150 48-22 100-72 100-150v-88L230 62Z"
+                  fill="url(#shieldGrad)" stroke="url(#edge)" stroke-width="2.5"/>
+            <path d="M230 62 130 104v88c0 78 52 128 100 150" fill="none" stroke="#2563EB" stroke-width="2.5" opacity="0.5"/>
+
+            <!-- checkmark -->
+            <path d="M196 200l24 24 46-58" stroke="#06B6D4" stroke-width="7" stroke-linecap="round" stroke-linejoin="round" class="draw-check"/>
+
+            <!-- data lines -->
+            <g opacity="0.6">
+              <line x1="150" y1="150" x2="188" y2="150" stroke="#334155" stroke-width="3" stroke-linecap="round"/>
+              <line x1="272" y1="150" x2="310" y2="150" stroke="#334155" stroke-width="3" stroke-linecap="round"/>
+              <line x1="150" y1="264" x2="188" y2="264" stroke="#334155" stroke-width="3" stroke-linecap="round"/>
+              <line x1="272" y1="264" x2="310" y2="264" stroke="#334155" stroke-width="3" stroke-linecap="round"/>
+            </g>
+          </svg>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ 3. SERVICES ============ -->
+    <section class="section" id="services">
+      <div class="container">
+        <div class="section-head fade-in">
+          <span class="eyebrow">Services</span>
+          <h2>Full-spectrum security operations</h2>
+          <p class="section-lead">Offensive testing, defensive monitoring, and rapid response — delivered by one accountable team.</p>
+        </div>
+
+        <div class="grid grid-3">
+          <article class="card fade-in">
+            <div class="card-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none"><path d="M4 4h16v6H4zM4 14h10v6H4z" stroke="currentColor" stroke-width="1.6"/><path d="M17 15l2 2 3-3" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </div>
+            <h3>Penetration Testing</h3>
+            <p>Adversary-style assessments that expose exploitable weaknesses across your apps, networks, and APIs before attackers do.</p>
+          </article>
+
+          <article class="card fade-in">
+            <div class="card-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none"><path d="M7 18a4 4 0 0 1 0-8 5 5 0 0 1 9.6-1.5A3.5 3.5 0 0 1 18 18H7Z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></svg>
+            </div>
+            <h3>Cloud Security</h3>
+            <p>Harden AWS, Azure, and GCP with continuous posture management, misconfiguration detection, and least-privilege access.</p>
+          </article>
+
+          <article class="card fade-in">
+            <div class="card-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="8" stroke="currentColor" stroke-width="1.6"/><path d="M12 8v4l3 2" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
+            </div>
+            <h3>Security Operations Center</h3>
+            <p>A dedicated SOC watches your environment 24/7, triaging alerts and containing threats so nothing slips through.</p>
+          </article>
+
+          <article class="card fade-in">
+            <div class="card-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none"><path d="M12 3l8 3v6c0 5-3.5 7.5-8 9-4.5-1.5-8-4-8-9V6l8-3Z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/><path d="M12 8v5M12 15.5v.5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
+            </div>
+            <h3>Vulnerability Assessment</h3>
+            <p>Continuous scanning and risk-ranked reporting that turns thousands of findings into a clear, prioritised remediation plan.</p>
+          </article>
+
+          <article class="card fade-in">
+            <div class="card-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none"><rect x="4" y="4" width="16" height="12" rx="1.5" stroke="currentColor" stroke-width="1.6"/><path d="M9 20h6M12 16v4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
+            </div>
+            <h3>Endpoint Protection</h3>
+            <p>Next-generation EDR across laptops, servers, and mobile — detecting malicious behaviour and isolating devices in seconds.</p>
+          </article>
+
+          <article class="card fade-in">
+            <div class="card-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none"><path d="M13 2 4 14h7l-1 8 9-12h-7l1-8Z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></svg>
+            </div>
+            <h3>Incident Response</h3>
+            <p>When something breaks, our responders take command — containing, eradicating, and recovering with a clear post-incident report.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ 4. WHY CHOOSE US ============ -->
+    <section class="section section-alt" id="about">
+      <div class="container">
+        <div class="section-head fade-in">
+          <span class="eyebrow">Why SentinelCore</span>
+          <h2>Security teams trust us to hold the line</h2>
+          <p class="section-lead">The people, process, and technology to defend enterprise infrastructure without compromise.</p>
+        </div>
+
+        <div class="grid grid-4">
+          <article class="feature fade-in">
+            <div class="feature-num">01</div>
+            <h3>24/7 Monitoring</h3>
+            <p>Eyes on your environment every hour of every day, backed by automated detection and human analysts.</p>
+          </article>
+          <article class="feature fade-in">
+            <div class="feature-num">02</div>
+            <h3>Zero Trust Security</h3>
+            <p>Never trust, always verify. We enforce identity, device, and context checks on every request.</p>
+          </article>
+          <article class="feature fade-in">
+            <div class="feature-num">03</div>
+            <h3>Certified Experts</h3>
+            <p>Analysts and engineers with deep, hands-on experience defending regulated, high-stakes environments.</p>
+          </article>
+          <article class="feature fade-in">
+            <div class="feature-num">04</div>
+            <h3>Fast Incident Response</h3>
+            <p>Contain threats in minutes, not days, with a rehearsed playbook and a responder always on call.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ 5. INDUSTRIES ============ -->
+    <section class="section" id="solutions">
+      <div class="container">
+        <div class="section-head fade-in">
+          <span class="eyebrow">Industries</span>
+          <h2>Protection tailored to your sector</h2>
+          <p class="section-lead">Compliance-aware security for the industries where the stakes are highest.</p>
+        </div>
+
+        <div class="grid grid-3 industries">
+          <article class="industry fade-in">
+            <div class="card-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none"><path d="M12 4v16M4 12h16" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg></div>
+            <h3>Healthcare</h3>
+            <p>Safeguard patient data and connected medical systems while meeting HIPAA obligations.</p>
+          </article>
+          <article class="industry fade-in">
+            <div class="card-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none"><path d="M4 9h16M6 9v9m12-9v9M4 18h16M12 4 4 8h16l-8-4Z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/></svg></div>
+            <h3>Finance</h3>
+            <p>Defend transactions and customer assets with fraud-aware monitoring and strong controls.</p>
+          </article>
+          <article class="industry fade-in">
+            <div class="card-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none"><path d="M5 8h14l-1 12H6L5 8ZM9 8V6a3 3 0 0 1 6 0v2" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/></svg></div>
+            <h3>Retail</h3>
+            <p>Protect payment flows and customer records across storefronts and e-commerce platforms.</p>
+          </article>
+          <article class="industry fade-in">
+            <div class="card-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none"><path d="M3 20h18M5 20V9l6-4 6 4v11M9 20v-5h4v5" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/></svg></div>
+            <h3>Manufacturing</h3>
+            <p>Secure OT and IoT alongside IT, keeping production lines running and resilient.</p>
+          </article>
+          <article class="industry fade-in">
+            <div class="card-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none"><path d="M4 20h16M6 20V8m4 12V8m4 12V8m4 12V8M4 8l8-4 8 4" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/></svg></div>
+            <h3>Government</h3>
+            <p>Meet stringent public-sector standards with hardened, audit-ready security programs.</p>
+          </article>
+          <article class="industry fade-in">
+            <div class="card-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none"><path d="M7 17a4 4 0 0 1 0-8 5 5 0 0 1 9.6-1.5A3.5 3.5 0 0 1 18 17H7Z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/></svg></div>
+            <h3>SaaS</h3>
+            <p>Ship faster with security baked into your platform, pipeline, and multi-tenant cloud.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ 6. SECURITY DASHBOARD SHOWCASE ============ -->
+    <section class="section section-alt">
+      <div class="container">
+        <div class="section-head fade-in">
+          <span class="eyebrow">Platform</span>
+          <h2>One console for your entire security posture</h2>
+          <p class="section-lead">A unified view of threats, assets, and analyst activity — always current.</p>
+        </div>
+
+        <div class="dashboard fade-in" role="img" aria-label="Illustrative SentinelCore security dashboard showing threat detection, monitoring status, security score, protected assets, and an incident timeline.">
+          <div class="dash-topbar">
+            <div class="dash-title">
+              <span class="dash-dot"></span> SentinelCore Console
+            </div>
+            <div class="dash-status"><span class="live-dot"></span> Live</div>
+          </div>
+
+          <div class="dash-grid">
+            <div class="dash-card dash-primary">
+              <span class="dash-label">Threat Detection</span>
+              <span class="dash-metric">1,284</span>
+              <span class="dash-meta up">threats blocked this week</span>
+              <div class="spark" aria-hidden="true">
+                <span style="height:35%"></span><span style="height:55%"></span><span style="height:42%"></span>
+                <span style="height:70%"></span><span style="height:60%"></span><span style="height:85%"></span>
+                <span style="height:74%"></span><span style="height:95%"></span>
+              </div>
+            </div>
+
+            <div class="dash-card">
+              <span class="dash-label">Active Monitoring</span>
+              <span class="dash-metric">312</span>
+              <span class="dash-meta">endpoints & services</span>
+              <div class="mini-ring" aria-hidden="true"><span></span></div>
+            </div>
+
+            <div class="dash-card">
+              <span class="dash-label">Security Score</span>
+              <span class="dash-metric">A+</span>
+              <div class="score-bar" aria-hidden="true"><i style="width:94%"></i></div>
+              <span class="dash-meta up">94 / 100</span>
+            </div>
+
+            <div class="dash-card">
+              <span class="dash-label">Protected Assets</span>
+              <span class="dash-metric">1,940</span>
+              <span class="dash-meta">across 6 environments</span>
+              <div class="asset-chips" aria-hidden="true">
+                <span>Cloud</span><span>Endpoints</span><span>Network</span>
+              </div>
+            </div>
+
+            <div class="dash-card dash-wide">
+              <span class="dash-label">Incident Timeline</span>
+              <ul class="timeline-feed">
+                <li><span class="tl-tag resolved">Resolved</span> Phishing attempt contained · Finance <em>2m ago</em></li>
+                <li><span class="tl-tag review">Review</span> Anomalous login flagged · Cloud <em>18m ago</em></li>
+                <li><span class="tl-tag resolved">Resolved</span> Malware isolated on endpoint · Retail <em>41m ago</em></li>
+                <li><span class="tl-tag info">Info</span> Vulnerability patch deployed · SaaS <em>1h ago</em></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ 7. SECURITY PROCESS ============ -->
+    <section class="section">
+      <div class="container">
+        <div class="section-head fade-in">
+          <span class="eyebrow">How we work</span>
+          <h2>A continuous security lifecycle</h2>
+          <p class="section-lead">Five disciplines that loop continuously to keep you ahead of threats.</p>
+        </div>
+
+        <ol class="process fade-in">
+          <li class="process-step">
+            <div class="process-node">1</div>
+            <h3>Assess</h3>
+            <p>Map your attack surface and rank the risks that matter most.</p>
+          </li>
+          <li class="process-step">
+            <div class="process-node">2</div>
+            <h3>Detect</h3>
+            <p>Instrument every layer so threats surface the moment they appear.</p>
+          </li>
+          <li class="process-step">
+            <div class="process-node">3</div>
+            <h3>Protect</h3>
+            <p>Apply Zero Trust controls and harden systems against exploitation.</p>
+          </li>
+          <li class="process-step">
+            <div class="process-node">4</div>
+            <h3>Monitor</h3>
+            <p>Watch continuously with a 24/7 SOC and automated analytics.</p>
+          </li>
+          <li class="process-step">
+            <div class="process-node">5</div>
+            <h3>Respond</h3>
+            <p>Contain, eradicate, and recover — then feed lessons back in.</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ============ 8. STATISTICS ============ -->
+    <section class="section section-alt">
+      <div class="container">
+        <div class="stats fade-in">
+          <div class="stat">
+            <span class="stat-num" data-target="99.9" data-suffix="%" data-decimals="1">0</span>
+            <span class="stat-label">Threat Detection</span>
+          </div>
+          <div class="stat">
+            <span class="stat-num" data-static="24/7">24/7</span>
+            <span class="stat-label">Monitoring</span>
+          </div>
+          <div class="stat">
+            <span class="stat-num" data-target="500" data-suffix="+">0</span>
+            <span class="stat-label">Security Assessments</span>
+          </div>
+          <div class="stat">
+            <span class="stat-num" data-target="50" data-suffix="+">0</span>
+            <span class="stat-label">Security Experts</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ 9. FAQ ============ -->
+    <section class="section">
+      <div class="container container-narrow">
+        <div class="section-head fade-in">
+          <span class="eyebrow">FAQ</span>
+          <h2>Answers before you ask</h2>
+        </div>
+
+        <div class="faq fade-in">
+          <div class="faq-item">
+            <button class="faq-q" aria-expanded="false">
+              How quickly can SentinelCore respond to an incident?
+              <span class="faq-icon" aria-hidden="true"></span>
+            </button>
+            <div class="faq-a"><p>Our SOC triages critical alerts within minutes, and a dedicated responder is on call 24/7 to begin containment as soon as a genuine threat is confirmed.</p></div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-q" aria-expanded="false">
+              Do you work with our existing security tools?
+              <span class="faq-icon" aria-hidden="true"></span>
+            </button>
+            <div class="faq-a"><p>Yes. We integrate with your current SIEM, EDR, cloud providers, and identity systems rather than forcing a rip-and-replace, so you keep the investments that already work.</p></div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-q" aria-expanded="false">
+              What does onboarding look like?
+              <span class="faq-icon" aria-hidden="true"></span>
+            </button>
+            <div class="faq-a"><p>Onboarding begins with an assessment of your environment, followed by tuned detection rules and monitoring. Most clients reach full coverage within a few weeks.</p></div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-q" aria-expanded="false">
+              Can you support compliance requirements?
+              <span class="faq-icon" aria-hidden="true"></span>
+            </button>
+            <div class="faq-a"><p>We build security programs that map to common frameworks and regulations, and we provide audit-ready reporting so you can demonstrate control to assessors and stakeholders.</p></div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-q" aria-expanded="false">
+              Is coverage really 24 hours a day?
+              <span class="faq-icon" aria-hidden="true"></span>
+            </button>
+            <div class="faq-a"><p>Yes. Our security operations center is staffed continuously, every day of the year, combining automated detection with human analysts so nothing goes unwatched overnight.</p></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ 10. CONTACT ============ -->
+    <section class="section section-alt" id="contact">
+      <div class="container contact-grid">
+        <div class="contact-copy fade-in">
+          <span class="eyebrow">Contact</span>
+          <h2>Let's secure what you're building</h2>
+          <p class="section-lead">Tell us about your environment and goals. A security specialist will get back to you within one business day.</p>
+          <ul class="contact-points">
+            <li>No obligation security consultation</li>
+            <li>Response within one business day</li>
+            <li>Your details are kept strictly confidential</li>
+          </ul>
+        </div>
+
+        <form class="contact-form fade-in" id="contactForm" novalidate>
+          <div class="field">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" autocomplete="name" required placeholder="Jane Doe" />
+          </div>
+          <div class="field">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" autocomplete="email" required placeholder="jane@company.com" />
+          </div>
+          <div class="field">
+            <label for="company">Company</label>
+            <input type="text" id="company" name="company" autocomplete="organization" placeholder="Company Inc." />
+          </div>
+          <div class="field">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="4" required placeholder="How can we help secure your organisation?"></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary btn-block">Send Message</button>
+          <p class="form-note" id="formNote" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ============ 11. FOOTER ============ -->
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <a href="#hero" class="logo" aria-label="SentinelCore home">
+          <svg class="logo-mark" width="26" height="26" viewBox="0 0 32 32" fill="none" aria-hidden="true">
+            <path d="M16 2 4 7v8c0 7.5 5 12.5 12 15 7-2.5 12-7.5 12-15V7L16 2Z" fill="#111827" stroke="#2563EB" stroke-width="1.2"/>
+            <path d="M11 16l3.5 3.5L21 12" stroke="#06B6D4" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+          <span class="logo-text">Sentinel<span class="logo-accent">Core</span></span>
+        </a>
+        <p class="footer-tag">Protecting digital infrastructure with confidence.</p>
+      </div>
+
+      <nav class="footer-col" aria-label="Quick links">
+        <h4>Company</h4>
+        <a href="#services">Services</a>
+        <a href="#solutions">Solutions</a>
+        <a href="#about">Why Us</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
+      <nav class="footer-col" aria-label="Legal">
+        <h4>Legal</h4>
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms of Service</a>
+      </nav>
+
+      <nav class="footer-col" aria-label="Social">
+        <h4>Connect</h4>
+        <a href="#" aria-label="SentinelCore on LinkedIn">LinkedIn</a>
+        <a href="#" aria-label="SentinelCore on GitHub">GitHub</a>
+      </nav>
+    </div>
+    <div class="container footer-bottom">
+      <p>&copy; <span id="year"></span> SentinelCore. All rights reserved.</p>
+      <p>Built for the enterprise.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
